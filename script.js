@@ -10,7 +10,7 @@ let GuildChannelStore = Object.values(wpRequire.c).find(x => x?.exports?.ZP?.get
 let FluxDispatcher = Object.values(wpRequire.c).find(x => x?.exports?.Z?.__proto__?.flushWaitQueue).exports.Z;
 let api = Object.values(wpRequire.c).find(x => x?.exports?.tn?.get).exports.tn;
 
-let quest = [...QuestsStore.quests.values()].find(x => x.id !== "1248385850622869556" && x.userStatus?.enrolledAt && !x.userStatus?.completedAt && new Date(x.config.expiresAt).getTime() > Date.now())
+let quest = [...QuestsStore.quests.values()].find(x => x.id !== "1412491570820812933" && x.userStatus?.enrolledAt && !x.userStatus?.completedAt && new Date(x.config.expiresAt).getTime() > Date.now())
 let isApp = typeof DiscordNative !== "undefined"
 if(!quest) {
 	console.log("You don't have any uncompleted quests!")
